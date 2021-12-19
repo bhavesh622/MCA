@@ -29,6 +29,4 @@ public class StringCharacters {
     
     System.out.println("The text contained vowels: " + vowels + "\n" + " consonants: " + (letters) + "\n"+ "spaces: " + spaces);
     }
-    
-    
-    }
+}
