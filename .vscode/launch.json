@@ -9,6 +9,79 @@
             "name": "Launch IntegerAdderInline",
             "request": "launch",
             "mainClass": "IntegerAdderInline",
+            "projectName": "MCA_5be0ae7c",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntegerAdder",
+            "request": "launch",
+            "mainClass": "IntegerAdder",
+            "projectName": "MCA_5be0ae7c",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
+            "name": "Launch RevWord",
+            "request": "launch",
+            "mainClass": "RevWord",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringCharacters",
+            "request": "launch",
+            "mainClass": "StringCharacters",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Reciprocator",
+            "request": "launch",
+            "mainClass": "Reciprocator",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Target",
+            "request": "launch",
+            "mainClass": "Target",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Combination",
+            "request": "launch",
+            "mainClass": "Combination",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch BoxVol",
+            "request": "launch",
+            "mainClass": "BoxVol",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch TypeCasting",
+            "request": "launch",
+            "mainClass": "TypeCasting",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch FinCalc1",
+            "request": "launch",
+            "mainClass": "FinCalc1",
+            "projectName": "MCA_5be0ae7c",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntegerAdderInline",
+            "request": "launch",
+            "mainClass": "IntegerAdderInline",
             "projectName": "MCA_db8405c2",
             "args": "${command:SpecifyProgramArgs}"
         },
