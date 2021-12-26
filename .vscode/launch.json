@@ -6,6 +6,56 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FinCalc",
+            "request": "launch",
+            "mainClass": "FinCalc",
+            "projectName": "MCA_db8405c2",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
+            "name": "Launch EmployeePay",
+            "request": "launch",
+            "mainClass": "EmployeePay",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch NearestPair",
+            "request": "launch",
+            "mainClass": "NearestPair",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch GradeExam",
+            "request": "launch",
+            "mainClass": "GradeExam",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch VowelFilter",
+            "request": "launch",
+            "mainClass": "VowelFilter",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DuplicateFinder",
+            "request": "launch",
+            "mainClass": "DuplicateFinder",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch FastestRun",
+            "request": "launch",
+            "mainClass": "FastestRun",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
             "name": "Launch IntegerAdderInline",
             "request": "launch",
             "mainClass": "IntegerAdderInline",
