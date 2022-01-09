@@ -11,7 +11,7 @@ public class GradeExam {
             }
         }
         for(int i = 0; i< results.length; i++){
-            System.out.println("Student " + i + " scored " + results[i]);
+            System.out.println("Student " + (i+1) + " scored " + results[i]);
         }
     }
     public static void main(String[] args) {
@@ -22,8 +22,5 @@ public class GradeExam {
         System.out.println("Results for the class: ");
         calcResults(subs, ans);
 
-    }
-
-
-    
+    } 
 }
