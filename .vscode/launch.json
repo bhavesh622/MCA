@@ -6,6 +6,21 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch WaffleMain",
+            "request": "launch",
+            "mainClass": "WaffleMain",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortCities",
+            "request": "launch",
+            "mainClass": "SortCities",
+            "projectName": "MCA_5be0ae7c",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
             "name": "Launch FinCalc",
             "request": "launch",
             "mainClass": "FinCalc",
