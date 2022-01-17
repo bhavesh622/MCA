@@ -6,6 +6,112 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Bank",
+            "request": "launch",
+            "mainClass": "Bank",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Banking",
+            "request": "launch",
+            "mainClass": "Banking",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Geometry",
+            "request": "launch",
+            "mainClass": "Geometry",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch BookCompare",
+            "request": "launch",
+            "mainClass": "BookCompare",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch StudentCompare",
+            "request": "launch",
+            "mainClass": "StudentCompare",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch PersonChecker",
+            "request": "launch",
+            "mainClass": "PersonChecker",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnimalImplem",
+            "request": "launch",
+            "mainClass": "AnimalImplem",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ElectronicsChecker",
+            "request": "launch",
+            "mainClass": "ElectronicsChecker",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch StudentAverage",
+            "request": "launch",
+            "mainClass": "StudentAverage",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestPalindromicWord",
+            "request": "launch",
+            "mainClass": "TestPalindromicWord",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DecipherCaesarCode",
+            "request": "launch",
+            "mainClass": "DecipherCaesarCode",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintJaggedPattern",
+            "request": "launch",
+            "mainClass": "PrintJaggedPattern",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringFunc",
+            "request": "launch",
+            "mainClass": "StringFunc",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch WaffleMain",
+            "request": "launch",
+            "mainClass": "WaffleMain",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortCities",
+            "request": "launch",
+            "mainClass": "SortCities",
+            "projectName": "MCA_db8405c2",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
             "name": "Launch StringFunc",
             "request": "launch",
             "mainClass": "StringFunc",
