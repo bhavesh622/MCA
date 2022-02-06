@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestSynchronization",
+            "request": "launch",
+            "mainClass": "TestSynchronization",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyThreadA",
+            "request": "launch",
+            "mainClass": "MyThreadA",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch RethrowException",
+            "request": "launch",
+            "mainClass": "RethrowException",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
             "name": "Launch Bank",
             "request": "launch",
             "mainClass": "Bank",
