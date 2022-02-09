@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StudentRegCheck",
+            "request": "launch",
+            "mainClass": "StudentRegCheck",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleCalcEx",
+            "request": "launch",
+            "mainClass": "SimpleCalcEx",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
             "name": "Launch Test",
             "request": "launch",
             "mainClass": "Test",
