@@ -6,6 +6,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AddressBookEntry",
+            "request": "launch",
+            "mainClass": "AddressBookEntry",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch PersonCollections",
+            "request": "launch",
+            "mainClass": "PersonCollections",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Persona",
+            "request": "launch",
+            "mainClass": "Persona",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch AscendingDescending",
+            "request": "launch",
+            "mainClass": "AscendingDescending",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SynchronisedBanking",
+            "request": "launch",
+            "mainClass": "SynchronisedBanking",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleCalcEx",
+            "request": "launch",
+            "mainClass": "SimpleCalcEx",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProducerCheck",
+            "request": "launch",
+            "mainClass": "ProducerCheck",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch BadThreads",
+            "request": "launch",
+            "mainClass": "BadThreads",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExceptionPOC",
+            "request": "launch",
+            "mainClass": "ExceptionPOC",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
+            "name": "Launch GravityCalcEx",
+            "request": "launch",
+            "mainClass": "GravityCalcEx",
+            "projectName": "MCA_5be0ae7c"
+        },
+        {
+            "type": "java",
             "name": "Launch StudentRegCheck",
             "request": "launch",
             "mainClass": "StudentRegCheck",

@@ -1,18 +1,9 @@
 import java.util.Scanner;
-public class GravityCalcEx {
+public class GravityCalc {
     static void CalcPos(double gravity, double initialVel, double fallingTime, double initialPosition){
 
-            try{ 
                 double result = (0.5*(gravity * Math.pow(fallingTime,2)))+(initialVel*fallingTime)+initialPosition; 
                 System.out.println("\nFinal position= "+Math.abs(result)); 
-                throw new ArithmeticException(); 
-            }
-            catch(ArithmeticException e){ 
-                System.out.println("Can't divide by zero " +e.toString()); 
-            }
-          finally{ 
-                System.out.println("Finally block executed"); 
-            } 
         }
     public static void main(String[] args) {
         double gravity = -9.81;
