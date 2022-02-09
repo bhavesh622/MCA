@@ -11,7 +11,12 @@ public class GravityCalcEx {
         //choice between if-else and switchcase
         System.out.println("Calculate using if-else or switch case? Input 1 for if-else, 2 for switch: ");
         Scanner scan = new Scanner(System.in);
-        
+        int choice, choices, choicei;
+        choice = scan.nextInt();
+        if(choice==1){
+            System.out.println("Using if-else");
+        }
+
     }
     
 }
