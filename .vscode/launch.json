@@ -6,6 +6,90 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch InetAddressTest",
+            "request": "launch",
+            "mainClass": "InetAddressTest",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch GravityCalc",
+            "request": "launch",
+            "mainClass": "GravityCalc",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddressBookEntry",
+            "request": "launch",
+            "mainClass": "AddressBookEntry",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch PersonCollections",
+            "request": "launch",
+            "mainClass": "PersonCollections",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Persona",
+            "request": "launch",
+            "mainClass": "Persona",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch AscendingDescending",
+            "request": "launch",
+            "mainClass": "AscendingDescending",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch SynchronisedBanking",
+            "request": "launch",
+            "mainClass": "SynchronisedBanking",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProducerCheck",
+            "request": "launch",
+            "mainClass": "ProducerCheck",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch BadThreads",
+            "request": "launch",
+            "mainClass": "BadThreads",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch InvalidProductCheck",
+            "request": "launch",
+            "mainClass": "InvalidProductCheck",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExceptionPOC",
+            "request": "launch",
+            "mainClass": "ExceptionPOC",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch GravityCalcEx",
+            "request": "launch",
+            "mainClass": "GravityCalcEx",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
             "name": "Launch AddressBookEntry",
             "request": "launch",
             "mainClass": "AddressBookEntry",

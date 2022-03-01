@@ -15,6 +15,7 @@ public class InvalidProductCheck {
     public static void main(String args[]) {
         InvalidProductCheck obj = new InvalidProductCheck();
         try {
+            System.out.println("Adding product with weight 60");
             obj.productCheck(60);
         } catch (InvalidProductException ex) {
             System.out.println("Caught the exception");
