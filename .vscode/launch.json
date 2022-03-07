@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ReaderWritersProblem",
+            "request": "launch",
+            "mainClass": "ReaderWritersProblem",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Prodcon",
+            "request": "launch",
+            "mainClass": "Prodcon",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProducerConsumer",
+            "request": "launch",
+            "mainClass": "ProducerConsumer",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Bakery",
+            "request": "launch",
+            "mainClass": "Bakery",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Peterson",
+            "request": "launch",
+            "mainClass": "Peterson",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
             "name": "Launch InetAddressTest",
             "request": "launch",
             "mainClass": "InetAddressTest",
