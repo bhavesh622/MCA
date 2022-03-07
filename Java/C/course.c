@@ -9,7 +9,6 @@ int main(){
     pid1=fork();
     int fd=open ("courses.txt", O_RDONLY);
     char line[200];
-    for int(i)
     if (pid1 == 0){
             printf("Reading 1st line from courses.txt \n");
             read(fd,line,16);

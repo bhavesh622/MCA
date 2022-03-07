@@ -1,7 +1,9 @@
-#include<sys/types.h> 
+#include<sys/types.h>
+#include<sys/wait.h> 
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
+
 int main() {  
     pid_t pid; 
     int i; 
@@ -11,7 +13,7 @@ int main() {
         execl("./B", "X", NULL); 
     } 
     else { 
-        WAIT(NULL);
+        wait(NULL);
         printf("\n I am parent.");
     } 
     printf("\nBye from Parent!");

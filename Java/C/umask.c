@@ -5,7 +5,7 @@
 #undef _POSIX_SOURCE
 #include <stdio.h>
 
-main(){
+int main(){
 int fd;
 mode_t old;
 printf("Old mask in: %i\n", old=umask(S_IRWXG));

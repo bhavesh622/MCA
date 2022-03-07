@@ -1,10 +1,10 @@
 #include<stdio.h>
-#include<conio.h>
-void main(){
+#include<stdlib.h>
+int main(){
 	int i, n, *ptr;
-	clrscr();
-	printf("Input the array size: ";
-	scanf("");
+	printf("Input the array size: ");
+	fflush(stdout);
+	scanf("%d",&n);
 	ptr = (int*)calloc(n,sizeof(int));
 	if(ptr==NULL){
 		printf("\nNo allocation of memory");

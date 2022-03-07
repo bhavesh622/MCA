@@ -26,7 +26,7 @@ int main(){
         }
     }
     printf("Writing to odd.txt: "); 
-    for(int j = 0; j < n/2; j++) {
+    for(int j = 0; j < ((n/2)+1); j++) {
         printf("%c ", write_odd[j]);
     }
     printf("\n");
