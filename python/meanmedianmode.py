@@ -1,0 +1,11 @@
+import statistics as st
+x = input("Enter numbers for list, integers only, separated by space: ")
+y = list(map(int,str.split(x," ")))
+u = st.mean(y)
+v = st.median(y)
+w = st.mode(y)
+print(y)
+print("The currently inputted list is: " + x)
+print("Mean of the given data: " + str(u))
+print("Mode of the given data: " + str(v))
+print("Mode of the given data: " + str(w))

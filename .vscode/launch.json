@@ -5,6 +5,103 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "linearsearch.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/path/to/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+
+        
+        {
+            "type": "java",
+            "name": "Launch Threads",
+            "request": "launch",
+            "mainClass": "Assignment.Threads",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyNum",
+            "request": "launch",
+            "mainClass": "Assignment.MyNum",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringCharacters",
+            "request": "launch",
+            "mainClass": "StringCharacters",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch EmployeeGen",
+            "request": "launch",
+            "mainClass": "Assignment.EmployeeGen",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseHello",
+            "request": "launch",
+            "mainClass": "ReverseHello",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch FruitsTest",
+            "request": "launch",
+            "mainClass": "FruitsTest",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalcServer",
+            "request": "launch",
+            "mainClass": "CalcServer",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch CollegeClientRequest",
+            "request": "launch",
+            "mainClass": "CollegeClientRequest",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch CollegeSearchServer",
+            "request": "launch",
+            "mainClass": "CollegeSearchServer",
+            "projectName": "MCA_db8405c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch UtilitiesTest",
+            "request": "launch",
+            "mainClass": "UtilitiesTest",
+            "projectName": "MCA_db8405c2"
+        },
+        {
             "type": "java",
             "name": "Launch ReaderWritersProblem",
             "request": "launch",

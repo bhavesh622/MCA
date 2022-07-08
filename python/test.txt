@@ -1,0 +1,4 @@
+hello this is a test file
+to test if python really reads this correctly
+123 mic check
+\s \n escape ch\naracter test

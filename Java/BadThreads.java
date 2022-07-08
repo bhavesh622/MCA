@@ -5,6 +5,7 @@ public class BadThreads {
     private static class CorrectorThread extends Thread {
             public void run() {
                 try {
+                    
                     sleep(1000); 
                 } catch (InterruptedException e) {}
                 // Key statement 1:
