@@ -18,10 +18,10 @@ void heapify(int i){
         int largest = i;
         int left = (2*i)+1;
         int right = (2*i)+2;
-        if(i<count && arr[left]>arr[largest]){
+        if(left<count && arr[left]>arr[largest]){
             largest = left;
         }
-        if(i<count && arr[right]>arr[largest]){
+        if(right<count && arr[right]>arr[largest]){
             largest = right;
         }
         if(largest != i){
@@ -46,7 +46,8 @@ void insert(int item){
     }
 }
 
-void delet(){
+
+int delet(){
     if(count==0){
         printf("\nHeap empty");
     }
@@ -79,7 +80,7 @@ void right(int x, int p){
 }
 void display(){
     printf("\n Nodes of heap: ");
-    for(int i = 0;i<size;i++){
+    for(int i = 0;i<count;i++){
         printf("%d",arr[i]);
     }
 }
@@ -128,6 +129,7 @@ void main(){
     insert(4);
     insert(9);
     insert(2);
+    delet(); //will delete 2
     display();
 
     // root->left = newnode(2);

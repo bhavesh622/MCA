@@ -32,11 +32,8 @@ void preorder(Node* n){
 }
 void preorderminmax(Node* n){
     if(n!=NULL){
-        // printf("%d",n->data);
         if (n->data<min) min = n->data;
         if (n->data>max) max = n->data;
-        // printf("%d Max  so far", max);
-        // printf("%d Min so far",min);
         preorderminmax(n->left);
         preorderminmax(n->right);
     }
