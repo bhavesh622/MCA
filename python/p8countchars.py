@@ -1,5 +1,13 @@
 def countchar(x):
-    
-    count= 0
+    count = {}
     for i in x:
-        count+=1
+        if i in count:
+            count[i]+=1
+        else:
+            count[i]=1
+    print("Counts of all characters: \n",count)
+countchar(input("Enter String: "))
+
+
+        
+

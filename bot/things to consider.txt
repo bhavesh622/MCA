@@ -1,0 +1,8 @@
+command not found exception (dont want disnake to handle everything without showing output on discord)
+Server image handling/no image case
+Autorole placement
+Reaction Roles
+Special timeout(Study command)
+User not found error when not using @ to mention
+music?? copyright
+modlog

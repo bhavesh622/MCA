@@ -1,4 +1,5 @@
 #include<stdlib.h>
+#include<climits>
 #include<stdio.h>
 
 int G[100][100];
@@ -37,6 +38,22 @@ void deleteEdge(int u, int v){
 		G[u][v] = G[v][u] = 0;
 	
 }
+int degree(int v){
+	int d = 0;
+	for(int i = 0; i < n; i++)
+	d += G[v][i];
+	return d;
+}
+int degree(){
+	int d = INT_MIN;
+	for(int i = 0; i < n; i++)
+	{
+		int deg = degree(i);
+		d = d > deg ? d : deg;
+	}
+	return d;
+}
+
 void display(){
 	
 	for(int i = 0; i < n; i++)
@@ -56,7 +73,8 @@ int main()
 	printf("4. Delete vertex\n");
 	printf("5. Delete edge\n");
 	printf("6. Display Graph\n");
-	printf()
+	printf("7. Degree of vertex\n");
+	printf("8. Degree of graph\n");
 	printf("0 to exit\n");
 	int choice, v;
 	
@@ -100,6 +118,19 @@ int main()
 			display();
 			break;
 		}
+		case 7:{
+			int v;
+			printf("Input vertex: ");
+			scanf("%d", &v);
+			printf("Degree is: %d\n", degree(v));
+			break;
+		}
+		case 8:{
+			int v;
+			printf("Degree of graph is: %d\n", degree());
+			break;
+		}
+
 	}}while(choice != 0);
 	
 	return 0;

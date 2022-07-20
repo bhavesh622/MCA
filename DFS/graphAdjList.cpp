@@ -150,9 +150,9 @@ int main()
 	print();
 	
 
-	printf("\n");
+	printf("BFS: \n");
 	bfs(0);
-	printf("\n");
+	printf("DFS: \n");
 	dfs(0);
 	printf("\n");
 	//print();
