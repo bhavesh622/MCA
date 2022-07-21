@@ -6,10 +6,11 @@ import random
 import sys
 
 import disnake
-from disnake import ApplicationCommandInteraction
+from disnake import ApplicationCommandInteraction, Guild
 from disnake.ext import tasks, commands
 from disnake.ext.commands import Bot
 from disnake.ext.commands import Context
+from matplotlib.style import context
 
 import exceptions
 
@@ -23,6 +24,7 @@ intents = disnake.Intents.default()
 
 #Enables prefix commands
 intents.message_content = True 
+intents.members= True
 
 bot = Bot(command_prefix=commands.when_mentioned_or(config["prefix"]), intents=intents, help_command=None)
 
@@ -167,7 +169,109 @@ async def on_command_error(context: Context, error) -> None:
         )
         await context.send(embed=embed)
     raise error
-
+# @bot.event
+# async def on_member_join(member:disnake.Member):
+#     print("Recognised that a member called " + member.name + " joined")
+#     try: 
+#         await member.send(member, "Hello there!")
+#         print("Sent message to " + member.name)
+#     except:
+#         print("Couldn't message " + member.name)
+#     embed=disnake.Embed(
+#         title="Welcome "+member.name+"!",
+#         description="We're so glad you're here!",
+#         color=disnake.Color.green()
+#     )
+#     ch= bot.get_channel(999577829463314502)
+#     await ch.send(embed=embed)
+#     role = disnake.utils.get(member.guild.roles, name="test") #  Gets the member role as a `role` object
+#     await disnake.Member.add_roles(member, role) # Gives the role to the user
+#     print("Added role '" + role.name + "' to " + member.name)
 
 # Run the bot with the token
+
+# class MyClient(disnake.Client):
+#     def __init__(self, *args, **kwargs):
+#         super().__init__(*args, **kwargs)
+#         print("hello")
+#         self.role_message_id = 999589163831664721  # ID of the message that can be reacted to to add/remove a role.
+#         self.emoji_to_role = {
+#             disnake.PartialEmoji(name="🔴" ): 999588861460086786,  # ID of the role associated with unicode emoji '🔴'.
+#             disnake.PartialEmoji(name="🟡"): 0,  # ID of the role associated with unicode emoji '🟡'.
+#             disnake.PartialEmoji(
+#                 name="green", id=0
+#             ): 0,  # ID of the role associated with a partial emoji's ID.
+#         }
+#     @bot.event
+#     async def on_raw_reaction_add(self, payload: disnake.RawReactionActionEvent):
+#         """Gives a role based on a reaction emoji."""
+#         print(payload.guild_id)
+#         if payload.guild_id is None or payload.member is None:
+#             return
+
+#         # Make sure that the message the user is reacting to is the one we care about.
+#         if payload.message_id != self.role_message_id:
+#             return
+
+#         guild = self.get_guild(payload.guild_id)
+#         if guild is None:
+#             # Check if we're still in the guild and it's cached.
+#             return
+
+#         try:
+#             role_id = self.emoji_to_role[payload.emoji]
+#         except KeyError:
+#             # If the emoji isn't the one we care about then exit as well.
+#             return
+
+#         role = guild.get_role(role_id)
+#         if role is None:
+#             # Make sure the role still exists and is valid.
+#             return
+
+#         try:
+#             # Finally, add the role.
+#             await payload.member.add_roles(role)
+#         except disnake.HTTPException:
+#             # If we want to do something in case of errors we'd do it here.
+#             pass
+
+#     async def on_raw_reaction_remove(self, payload: disnake.RawReactionActionEvent):
+#         """Removes a role based on a reaction emoji."""
+#         if payload.guild_id is None:
+#             return
+#         # Make sure that the message the user is reacting to is the one we care about.
+#         if payload.message_id != self.role_message_id:
+#             return
+
+#         guild = self.get_guild(payload.guild_id)
+#         if guild is None:
+#             # Check if we're still in the guild and it's cached.
+#             return
+
+#         try:
+#             role_id = self.emoji_to_role[payload.emoji]
+#         except KeyError:
+#             # If the emoji isn't the one we care about then exit as well.
+#             return
+
+#         role = guild.get_role(role_id)
+#         if role is None:
+#             # Make sure the role still exists and is valid.
+#             return
+
+#         # The payload for `on_raw_reaction_remove` does not provide `.member`
+#         # so we must get the member ourselves from the payload's `.user_id`.
+#         member = guild.get_member(payload.user_id)
+#         if member is None:
+#             # Make sure the member still exists and is valid.
+#             return
+
+#         try:
+#             # Finally, remove the role.
+#             await member.remove_roles(role)
+#         except disnake.HTTPException:
+#             # If we want to do something in case of errors we'd do it here.
+#             pass
+# client = MyClient(intents=intents)
 bot.run(config["token"])
