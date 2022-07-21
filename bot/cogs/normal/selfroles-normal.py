@@ -1,19 +1,17 @@
-#Template Command, to test out any new code
-from disnake import ApplicationCommandInteraction
+#Self role cog
 from disnake.ext import commands
 from disnake import PartialEmoji
-from helpers import checks
 import disnake
 
 
 # Here we name the cog and create a new class for the cog.
-class Template1(commands.Cog, name="template-slash1"):
+class SelfRoles(commands.Cog, name="self-roles"):
     def __init__(self, bot):
         self.bot = bot
-        self.role_message_id = 999589163831664721  # ID of the message that can be reacted to to add/remove a role.
+        self.role_message_id = 999603367246573568  # ID of the message that can be reacted to to add/remove a role.
         self.emoji_to_role = {
-            PartialEmoji(name="🔴"): 999588861460086786,  # ID of the role associated with unicode emoji '🔴'.
-            PartialEmoji(name="🟡"): 0,  # ID of the role associated with unicode emoji '🟡'.
+            PartialEmoji(name="🔴"): 999569588943605860,  # ID of the role associated with unicode emoji '🔴'.
+            PartialEmoji(name="🟡"): 999588861460086786,  # ID of the role associated with unicode emoji '🟡'.
             PartialEmoji(
                 name="green", id=0
             ): 0,  # ID of the role associated with a partial emoji's ID.
@@ -89,28 +87,6 @@ class Template1(commands.Cog, name="template-slash1"):
             # If we want to do something in case of errors we'd do it here.
             pass
 
-
-    # Here you can just add your own commands, you'll always need to provide "self" as first parameter.
-    @commands.slash_command(
-        name="testcommand1",
-        description="This is a testing command that does nothing.",
-    )
-    # This will only allow non-blacklisted members to execute the command
-    @checks.not_blacklisted()
-    # This will only allow owners of the bot to execute the command -> config.json
-    @checks.is_owner()
-    async def testcommand(self, interaction: ApplicationCommandInteraction):
-        """
-        This is a testing command that does nothing.
-        Note: This is a SLASH command
-        :param interaction: The application command interaction.
-        """
-        # Do your stuff here
-
-        # Don't forget to remove "pass", that's just because there's no content in the method.
-        pass
-
-
 # And then we finally add the cog to the bot so that it can load, unload, reload and use it's content.
 def setup(bot):
-    bot.add_cog(Template1(bot))
+    bot.add_cog(SelfRoles(bot))
