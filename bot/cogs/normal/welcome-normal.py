@@ -20,7 +20,7 @@ class Welcome(commands.Cog, name="welcome-normal"):
         )
         ch= self.bot.get_channel(999577829463314502)
         await ch.send(embed=embed)
-        role = disnake.utils.get(member.guild.roles, name="test") #  Gets the member role as a `role` object
+        role = disnake.utils.get(member.guild.roles, name="onjoin") #  Gets the member role as a `role` object
         await disnake.Member.add_roles(member, role) # Gives the role to the user
         print("Added role '" + role.name + "' to " + member.name)
 
